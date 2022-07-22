@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div onclick="tree_toggle(arguments[0])">
+        <ul class="tree">
+            <li class="Node folder__expandOpen">
+                <div class="folder__expand"></div>
+                <div class="folder__name">
+                    <img src="img/folder_icon.png" alt="" class="folder__icon">
+                    Folder 1
+                </div>
+                <ul class="folder">
+                    <li class="Node last__file">
+                        <div class="folder__expand"></div>
+                        <div class="folder__name"><img src="img/file_icon.png" alt="" class="file__icon">Item 1.1</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="Node folder__expandOpen">
+                <div class="folder__expand"></div>
+                <div class="folder__name">
+                    <img src="img/folder_icon.png" alt="" class="folder__icon"> Folder 2
+                </div>
+                <ul class="folder">
+                    <li class="Node folder__expandOpen">
+                        <div class="folder__expand"></div>
+                        <div class="folder__name">
+                            <img src="img/folder_icon.png" alt="" class="folder__icon"> Subfolder 2.1
+                        </div>
+                        <ul class="folder">
+                            <li class="Node last__file">
+                                <div class="folder__expand"></div>
+                                <div class="folder__name">
+                                    <img src="img/file_icon.png" alt="" class="file__icon"> File 2.1.1
+                                </div>
+                            </li>
+                            <li class="Node last__file">
+                                <div class="folder__expand"></div>
+                                <div class="folder__name">
+                                    <img src="img/file_icon.png" alt="" class="file__icon"> File 2.1.2
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="Node last__file">
+                        <div class="folder__expand"></div>
+                        <div class="folder__name">
+                            <img src="img/file_icon.png" alt="" class="file__icon"> File 2.2
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="Node folder__expandClosed">
+                <div class="folder__expand"></div>
+                <div class="folder__name">
+                    <img src="img/folder_icon.png" alt="" class="folder__icon"> Folder 3
+                </div>
+                <ul class="folder">
+                    <li class="Node last__file">
+                        <div class="folder__expand"></div>
+                        <div class="folder__name">
+                            <img src="img/file_icon.png" alt="" class="file__icon"> File 3.1
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="Node folder__expandOpen">
+                <div class="folder__name">
+                    <img src="img/file_icon.png" alt="" class="file__icon">
+                    File 4
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <script src="script.js"></script>
+</body></html>
